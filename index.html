@@ -6,74 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafaela</title>
 
-    <!-- Fonte cursiva do Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            background-color: rgb(243, 159, 215);
-            font-family: 'Dancing Script', sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-        h1 {
-            font-family: 'Dancing Script', cursive;
-            font-size: 3rem;
-            margin-top: 2rem;
-            color: black;
-        }
-
-        p {
-            font-size: 2.2rem;
-            padding: 0 1.5rem;
-            text-align: justify;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto 2rem auto;
-        }
-
-        ul li {
-            margin-bottom: 1rem;
-        }
-
-        img {
-            border-radius: 15px;
-            margin-top: 10px;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 80%;
-            margin: 2rem auto;
-        }
-
-        td {
-            text-align: center;
-            padding: 1rem;
-        }
-
-        a {
-            display: inline-block;
-            margin-top: 2rem;
-            padding: 0.7rem 1.5rem;
-            background-color: #171a21;
-            color: white;
-            text-decoration: none;
-            border-radius: 10px;
-            font-size: 1.5rem;
-        }
-
-        a:hover {
-            background-color: #2a2e39;
-        }
-    </style>
+    <!-- Link para o CSS externo -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Rafaela Becker do Prado Lima Oliveira</h1>
     
     <p>Sou a Rafaela, tenho 29 anos, nasci em Goiânia mas atualmente moro em Palhoça. Adoro jogar videogame, ouvir música, ler e gatos.</p>
+
+    <!-- Imagem do Gato Preto antes da lista de gostos -->
+    <img id="gatoPreto" src="https://www.w3schools.com/w3images/cat.jpg" alt="Gato Preto" style="width: 300px; cursor: pointer;">
 
     <h2>Coisas que eu gosto:</h2>
     <ul>
@@ -81,9 +23,9 @@
         <li>Ouvir música</li>
         <li>Ler</li>
     </ul>
-    
-    <!-- Imagem do Gato Preto -->
-    <img id="gatoPreto" src="https://www.w3schools.com/w3images/cat.jpg" alt="Gato Preto" style="width: 300px; cursor: pointer;">
+
+    <!-- Imagem do Videogame -->
+    <img id="videogame" src="https://images.openai.com/thumbnails/7551faaea8e32a35cf718493ca327f30.jpeg" alt="Pessoa jogando videogame" style="width: 300px; cursor: pointer;">
 
     <table border="1">
         <tr>
@@ -109,16 +51,7 @@
 
     <a href="https://open.spotify.com/intl-pt/artist/1KtNSawz6BDskQOgeRw9a2" target="_blank">Visite o Spotify</a>
 
-    <script>
-        // Exibir mensagem de boas-vindas quando a página carregar
-        window.onload = function() {
-            alert("Bem-vindo à minha página!");
-        };
-
-        // Adicionar evento de clique na imagem do gato preto
-        document.getElementById("gatoPreto").addEventListener("click", function() {
-            alert("Você clicou no gato preto!");
-        });
-    </script>
+    <!-- Link para o JavaScript externo -->
+    <script src="script.js"></script>
 </body>
 </html>
