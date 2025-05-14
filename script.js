@@ -7,8 +7,3 @@ document.getElementById("btnBoasVindas").addEventListener("click", function () {
 document.getElementById("gatoPreto").addEventListener("click", function () {
     alert("Miau!");
 });
-
-// Alerta ao clicar na imagem do videogame
-document.getElementById("videogame").addEventListener("click", function () {
-    alert("Você clicou na imagem do videogame!");
-});
