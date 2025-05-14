@@ -94,3 +94,19 @@ a:hover {
     color: #FF69B4;
     text-decoration: underline;
 }
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin: 1rem;
+    background-color: #171a21;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2a2e39;
+}
