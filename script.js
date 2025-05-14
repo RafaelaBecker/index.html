@@ -1,11 +1,11 @@
-// Exibe uma mensagem quando o botão for clicado
+// Exibe mensagem ao clicar no botão de boas-vindas
 document.getElementById("btnBoasVindas").addEventListener("click", function () {
     alert("Bem-vindo à minha página!");
 });
 
-// Alerta ao clicar no gato preto
+// Alerta ao clicar no gato preto com a mensagem "Miau"
 document.getElementById("gatoPreto").addEventListener("click", function () {
-    alert("Você clicou no gato preto!");
+    alert("Miau!");
 });
 
 // Alerta ao clicar na imagem do videogame
