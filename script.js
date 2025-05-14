@@ -1,7 +1,7 @@
-// Mensagem de boas-vindas ao carregar a página
-window.onload = function () {
+// Exibe uma mensagem quando o botão for clicado
+document.getElementById("btnBoasVindas").addEventListener("click", function () {
     alert("Bem-vindo à minha página!");
-};
+});
 
 // Alerta ao clicar no gato preto
 document.getElementById("gatoPreto").addEventListener("click", function () {
