@@ -14,13 +14,14 @@ h1 {
 }
 
 p {
-    font-size: 2.2rem;
+    font-size: 1.5rem;         /* menor tamanho */
     padding: 0 1.5rem;
-    text-align: justify;
+    text-align: center;        /* centraliza o texto */
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto 2rem auto;
 }
+
 
 ul li {
     margin-bottom: 1rem;
