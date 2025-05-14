@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,121 +22,84 @@
             font-family: 'Dancing Script', cursive;
             font-size: 3rem;
             margin-top: 2rem;
-            color: black; /* Título em preto */
+            color: black;
         }
 
         p {
-            font-size: 2.2rem;  /* Tamanho maior do texto */
+            font-size: 2.2rem;
             padding: 0 1.5rem;
-            text-align: justify; /* Justifica o texto */
-            line-height: 1.6;     /* Espaço entre as linhas */
-            max-width: 800px;     /* Largura máxima */
-            margin: 0 auto 2rem auto; /* Centraliza o parágrafo e adiciona margem inferior */
+            text-align: justify;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
         }
 
-        ul li {
-            margin-bottom: 1rem; /* Espaçamento maior entre os itens da lista */
+        .welcome-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .welcome-message {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
         }
 
         img {
-            border-radius: 15px; /* Bordas arredondadas nas imagens */
-            max-width: 100%;     /* A imagem nunca ultrapassa o tamanho do contêiner */
-            height: auto;        /* Mantém a proporção original */
-            display: block;      /* Remove espaços em branco abaixo da imagem */
-            margin: 1rem auto;   /* Centraliza a imagem */
-        }
-
-        table {
-            width: 80%;                     /* Limita a largura da tabela */
-            margin: 2rem auto;              /* Centraliza a tabela */
-            border-collapse: collapse;      /* Remove espaços entre as células */
-            border-radius: 15px;            /* Bordas arredondadas */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-        }
-
-        td {
-            padding: 1rem;                  /* Espaçamento dentro das células */
-            text-align: center;             /* Centraliza o conteúdo das células */
-            border: 1px solid #ddd;         /* Cor de borda suave */
-        }
-
-        td img {
-            border-radius: 15px;            /* Bordas arredondadas nas imagens dentro da tabela */
-            width: 100%;                     /* A imagem se ajusta ao tamanho da célula */
-            max-width: 200px;                /* Limita o tamanho máximo da imagem */
-        }
-
-        tr:nth-child(even) {
-            background-color: #f7f7f7;      /* Cor de fundo alternada para as linhas */
-        }
-
-        tr:hover {
-            background-color: #e1e1e1;      /* Efeito de cor ao passar o mouse sobre a linha */
-            transition: background-color 0.3s ease; /* Transição suave da cor */
-        }
-
-        td:hover {
-            background-color: #f0f0f0;   /* Efeito de cor ao passar o mouse sobre as células */
-            cursor: pointer;             /* Muda o cursor para indicar interatividade */
-            transition: background-color 0.3s ease; /* Transição suave */
-        }
-
-        td img:hover {
-            transform: scale(1.1);           /* Aumenta a imagem em 10% */
-            transition: transform 0.3s ease; /* Transição suave */
+            border-radius: 15px;
+            max-width: 100%;
+            height: auto;
+            width: 300px;
         }
 
         a {
-            color: #000000;            /* Cor inicial do link (preto) */
-            text-decoration: none;     /* Remove o sublinhado do link */
-            transition: color 0.3s ease; /* Suaviza a transição de cor */
+            color: #000000;
+            text-decoration: none;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            padding: 0.7rem 1.5rem;
+            background-color: #171a21;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
         }
 
         a:hover {
-            color: #FF69B4;            /* Cor do link ao passar o mouse (rosa choque, por exemplo) */
-            text-decoration: underline; /* Coloca o sublinhado de volta */
+            background-color: #2a2e39;
         }
     </style>
 </head>
-<body> 
+<body>
+    <!-- Container de boas-vindas -->
+    <div class="welcome-container">
+        <div class="welcome-message">
+            <p>Bem-vindo(a) ao meu site!</p>
+            <p>Adoro gatos!</p>
+        </div>
+        <img src="https://c.tenor.com/3UB6rGUjwK8AAAAC/black-cat.gif" alt="Gato preto fofo">
+    </div>
+
     <h1>Rafaela Becker do Prado Lima Oliveira</h1>
     
     <p>Sou a Rafaela, tenho 29 anos, nasci em Goiânia mas atualmente moro em Palhoça. Adoro jogar videogame, ouvir música, ler e gatos.</p>
 
     <h2>Coisas que eu gosto:</h2>
     <ul>
-        <li>Jogar videogame 🎮
-            <img src="https://images.openai.com/thumbnails/7551faaea8e32a35cf718493ca327f30.jpeg" alt="Pessoa jogando videogame" style="width: 300px;">
-        </li>
-        <li>Ouvir música 🎵</li>
-        <li>Ler 📚</li>
+        <li>Jogar videogame</li>
+        <li>Ouvir música</li>
+        <li>Ler</li>
     </ul>
-
-    <table border="1">
-        <tr>
-            <td>Japão</td>
-            <td>Coreia do Sul</td>
-            <td>Grécia</td>
-        </tr>
-        <tr>
-            <td>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Torii_gate_at_Itsukushima_Shrine.jpg/320px-Torii_gate_at_Itsukushima_Shrine.jpg" 
-                     alt="Japão" 
-                     style="width: 200px;">
-            </td>
-            <td>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Seoul_Skyline_2019.jpg/320px-Seoul_Skyline_2019.jpg" 
-                     alt="Coreia do Sul" 
-                     style="width: 200px;">
-            </td>
-            <td>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Acropolis_of_Athens_2019.jpg/320px-Acropolis_of_Athens_2019.jpg" 
-                     alt="Grécia" 
-                     style="width: 200px; border-radius: 15px;">
-            </td>
-        </tr>
-    </table>
+    
+    <img src="https://images.openai.com/thumbnails/7551faaea8e32a35cf718493ca327f30.jpeg" alt="Pessoa jogando videogame" style="width: 300px;">
 
     <a href="https://open.spotify.com/intl-pt/artist/1KtNSawz6BDskQOgeRw9a2" target="_blank">Visite o Spotify</a>
+
+    <script>
+        // Mensagem e gato
+    </script>
 </body>
 </html>
