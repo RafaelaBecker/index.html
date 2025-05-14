@@ -14,7 +14,7 @@ h1 {
 }
 
 p {
-    font-size: 2.2rem;
+    font-size: 1.8rem; /* Diminui o tamanho da fonte do texto "Sou a Rafaela" */
     padding: 0 1.5rem;
     text-align: justify;
     line-height: 1.6;
@@ -26,7 +26,7 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    text-align: left; /* Garante que os itens da lista fiquem alinhados à esquerda */
+    text-align: left;
     margin-top: 1rem; 
 }
 
