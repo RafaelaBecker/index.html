@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,38 +34,35 @@
             margin: 0 auto 2rem auto;
         }
 
-        .welcome-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-
-        .welcome-message {
-            font-size: 2rem;
-            color: #333;
-            margin-bottom: 20px;
+        ul li {
+            margin-bottom: 1rem;
         }
 
         img {
             border-radius: 15px;
-            max-width: 100%;
-            height: auto;
-            width: 300px;
+            margin-top: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 2rem auto;
+        }
+
+        td {
+            text-align: center;
+            padding: 1rem;
         }
 
         a {
-            color: #000000;
-            text-decoration: none;
-            font-size: 1.5rem;
+            display: inline-block;
             margin-top: 2rem;
             padding: 0.7rem 1.5rem;
             background-color: #171a21;
             color: white;
             text-decoration: none;
             border-radius: 10px;
-            transition: background-color 0.3s ease;
+            font-size: 1.5rem;
         }
 
         a:hover {
@@ -74,15 +71,6 @@
     </style>
 </head>
 <body>
-    <!-- Container de boas-vindas -->
-    <div class="welcome-container">
-        <div class="welcome-message">
-            <p>Bem-vindo(a) ao meu site!</p>
-            <p>Adoro gatos!</p>
-        </div>
-        <img src="https://c.tenor.com/3UB6rGUjwK8AAAAC/black-cat.gif" alt="Gato preto fofo">
-    </div>
-
     <h1>Rafaela Becker do Prado Lima Oliveira</h1>
     
     <p>Sou a Rafaela, tenho 29 anos, nasci em Goiânia mas atualmente moro em Palhoça. Adoro jogar videogame, ouvir música, ler e gatos.</p>
@@ -94,12 +82,43 @@
         <li>Ler</li>
     </ul>
     
-    <img src="https://images.openai.com/thumbnails/7551faaea8e32a35cf718493ca327f30.jpeg" alt="Pessoa jogando videogame" style="width: 300px;">
+    <!-- Imagem do Gato Preto -->
+    <img id="gatoPreto" src="https://www.w3schools.com/w3images/cat.jpg" alt="Gato Preto" style="width: 300px; cursor: pointer;">
+
+    <table border="1">
+        <tr>
+            <td>Japão</td>
+            <td>Coreia do Sul</td>
+            <td>Grécia</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Torii_gate_at_Itsukushima_Shrine.jpg/320px-Torii_gate_at_Itsukushima_Shrine.jpg" 
+                     alt="Japão" style="width: 200px;">
+            </td>
+            <td>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Seoul_Skyline_2019.jpg/320px-Seoul_Skyline_2019.jpg" 
+                     alt="Coreia do Sul" style="width: 200px;">
+            </td>
+            <td>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Acropolis_of_Athens_2019.jpg/320px-Acropolis_of_Athens_2019.jpg" 
+                     alt="Grécia" style="width: 200px; border-radius: 15px;">
+            </td>
+        </tr>
+    </table>
 
     <a href="https://open.spotify.com/intl-pt/artist/1KtNSawz6BDskQOgeRw9a2" target="_blank">Visite o Spotify</a>
 
     <script>
-        // Mensagem e gato
+        // Exibir mensagem de boas-vindas quando a página carregar
+        window.onload = function() {
+            alert("Bem-vindo à minha página!");
+        };
+
+        // Adicionar evento de clique na imagem do gato preto
+        document.getElementById("gatoPreto").addEventListener("click", function() {
+            alert("Você clicou no gato preto!");
+        });
     </script>
 </body>
 </html>
