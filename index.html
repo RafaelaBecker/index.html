@@ -111,35 +111,54 @@
     style="width: 300px; cursor: pointer;"
   />
 
-  <table class="tabela-paises">
-    <tr>
-      <td><strong>Japão</strong></td>
-      <td>
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Torii_gate_at_Itsukushima_Shrine.jpg/320px-Torii_gate_at_Itsukushima_Shrine.jpg"
-          alt="Templo Japão"
-        />
-      </td>
-    </tr>
-    <tr>
-      <td><strong>Coreia do Sul</strong></td>
-      <td>
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Seoul_2017-02-17_img3_South_Korea_Drama_Studio.jpg/320px-Seoul_2017-02-17_img3_South_Korea_Drama_Studio.jpg"
-          alt="Dorama Coreia"
-        />
-      </td>
-    </tr>
-    <tr>
-      <td><strong>Grécia</strong></td>
-      <td>
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Panagia_Prasini_-_Santorini_2007.jpg/320px-Panagia_Prasini_-_Santorini_2007.jpg"
-          alt="Santuário Grécia"
-        />
-      </td>
-    </tr>
-  </table>
+  <style>
+  .tabela-paises {
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto;
+    border-collapse: collapse;
+  }
+
+  .tabela-paises td {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .tabela-paises img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .tabela-paises strong {
+    font-size: 1.2rem;
+    color: #5c004f;
+  }
+</style>
+
+<table class="tabela-paises">
+  <tr>
+    <td><strong>Japão</strong></td>
+    <td>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Torii_gate_at_Itsukushima_Shrine.jpg/320px-Torii_gate_at_Itsukushima_Shrine.jpg" alt="Templo Japão">
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Coreia do Sul</strong></td>
+    <td>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Seoul_2017-02-17_img3_South_Korea_Drama_Studio.jpg/320px-Seoul_2017-02-17_img3_South_Korea_Drama_Studio.jpg" alt="Dorama Coreia">
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Grécia</strong></td>
+    <td>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Panagia_Prasini_-_Santorini_2007.jpg/320px-Panagia_Prasini_-_Santorini_2007.jpg" alt="Santuário Grécia">
+    </td>
+  </tr>
+</table>
+
 
   <a href="https://open.spotify.com/intl-pt/artist/1KtNSawz6BDskQOgeRw9a2" target="_blank"
     >Minha banda preferida no Spotify</a
