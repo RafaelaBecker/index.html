@@ -36,10 +36,11 @@ ul li {
 }
 
 h2 {
-  text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem; /* diminui o tamanho da fonte */
+  color: #5c004f; /* opcional: cor combinando com o título */
   margin-top: 2rem;
 }
+
 
 img {
   border-radius: 15px;
