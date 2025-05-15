@@ -6,7 +6,7 @@ botao.onclick = function () {
     if (mensagemCriada === false) {
         var novaMensagem = document.createElement("p");
         novaMensagem.textContent = "Seja muito bem-vindo!";
-        areaMensagem.appendClhid(novaMensagem);
+        areaMensagem.appendChild(novaMensagem);
         mensagemCriada = true;
     }
 };
