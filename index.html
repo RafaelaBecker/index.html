@@ -60,6 +60,26 @@
       display: block;
       opacity: 1;
     }
+
+    /* Nova seção para "Coisas que eu gosto" */
+    .secao-gostos {
+      max-width: 800px;
+      margin: 1rem auto;
+      padding: 0 1rem;
+      text-align: left;
+      font-size: 1.2rem;
+      color: #5c004f;
+    }
+
+    .secao-gostos h2 {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .secao-gostos ul {
+      padding-left: 1.2rem;
+      margin-top: 0;
+    }
   </style>
 </head>
 
@@ -68,18 +88,21 @@
 
   <p>Sou a Rafaela, tenho 29 anos, nasci em Goiânia mas atualmente moro em Palhoça. Adoro jogar videogame, ouvir música, ler e gatos.</p>
 
+  <!-- Botão logo depois do texto -->
   <button id="mostrarMensagem">Clique para ver a mensagem</button>
 
+  <!-- Mensagem aparece aqui -->
   <div id="mensagemContainer"></div>
 
+  <!-- Seção "Coisas que eu gosto" -->
   <div class="secao-gostos">
-  <h2>Coisas que eu gosto:</h2>
-  <ul>
-    <li>Jogar videogame</li>
-    <li>Ouvir música</li>
-    <li>Ler</li>
-  </ul>
-</div>
+    <h2>Coisas que eu gosto:</h2>
+    <ul>
+      <li>Jogar videogame</li>
+      <li>Ouvir música</li>
+      <li>Ler</li>
+    </ul>
+  </div>
 
   <img
     id="videogame"
