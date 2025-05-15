@@ -3,32 +3,10 @@ var areaMensagem = document.getElementById("areaMensagem");
 var mensagemCriada = false;
 
 botao.onclick = function () {
-    if (!mensagemCriada) {
+    if (mensagemCriada === false) {
         var novaMensagem = document.createElement("p");
         novaMensagem.textContent = "Seja muito bem-vindo!";
-
-        var novaImagem = document.createElement("img");
-        novaImagem.src = "https://www.w3schools.com/w3images/cat.jpg";
-        novaImagem.alt = "Gato da Galeria";
-        novaImagem.style.width = "300px";
-        novaImagem.style.cursor = "pointer";
-
-        novaImagem.addEventListener("click", function () {
-            alert("Miau!");
-        });
-
-        areaMensagem.appendChild(novaMensagem);
-        areaMensagem.appendChild(novaImagem);
-
+        areaMensagem.appendClhid(novaMensagem);
         mensagemCriada = true;
     }
-
-botao.addEventListener('click', () => {
-  // Exibe a mensagem e a imagem ao clicar no botão
-  mensagemContainer.style.display = 'block';
-});
-
-// Ao clicar na imagem da galeria, exibe "Miau"
-imagemGaleria.addEventListener('click', () => {
-  alert('Miau');
-});
+};
