@@ -35,9 +35,9 @@ ul li {
   font-size: 1.5rem;
 }
 
-h2 {
-  font-size: 1.5rem; /* diminui o tamanho da fonte */
-  color: #5c004f; /* opcional: cor combinando com o título */
+h2.secao-titulo {
+  font-size: 1.2rem; /* tamanho menor */
+  color: #5c004f;    /* cor combinando com o resto */
   margin-top: 2rem;
 }
 
