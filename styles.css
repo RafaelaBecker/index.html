@@ -62,9 +62,18 @@ table tr {
   border-bottom: 2px solid black; /* borda preta entre linhas */
 }
 
-table tr:last-child {
-  border-bottom: none; /* remove borda da última linha */
+table td:first-child {
+  padding: 10px 5px 10px 10px; /* menos padding direito */
+  width: 50px; /* largura fixa para alinhar imagens */
 }
+
+table td:last-child {
+  padding: 10px;
+  text-align: left;
+  background-color: #f0f0f0;
+  vertical-align: middle;
+}
+
 
 table td {
   padding: 10px;
