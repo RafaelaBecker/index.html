@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <title>Rafaela</title>
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet" />
   <style>
     body {
       background-color: #ffe6f0; /* rosa pastel */
@@ -13,13 +14,11 @@
     }
 
     h1.titulo {
-      font-family: 'Chewy', cursive; /* fonte fofa no título */
+      font-family: 'Chewy', cursive;
       font-size: 3rem;
       margin-top: 1.5rem;
       color: #5c004f;
     }
-  </style>
-</head>
 
     p {
       font-size: 1.2rem;
@@ -38,55 +37,62 @@
       border-radius: 10px;
       cursor: pointer;
       border: none;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #3a3f55;
     }
 
     #mensagemContainer {
-      margin-top: 2rem;
+      margin-top: 1rem;
       display: none;
+      font-size: 1.3rem;
+      color: #5c004f;
+      opacity: 0;
+      transition: opacity 1s ease;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    #mensagemContainer.show {
+      display: block;
+      opacity: 1;
     }
   </style>
 </head>
-<body>
 
+<body>
   <h1 class="titulo">Rafaela Becker do Prado Lima Oliveira</h1>
 
   <p>Sou a Rafaela, tenho 29 anos, nasci em Goiânia mas atualmente moro em Palhoça. Adoro jogar videogame, ouvir música, ler e gatos.</p>
 
-  <button id="mostrarMensagem">
-    Clique para ver a mensagem
-  </button>
+  <!-- Botão logo depois do texto -->
+  <button id="mostrarMensagem">Clique para ver a mensagem</button>
 
+  <!-- Mensagem aparece aqui -->
   <div id="mensagemContainer"></div>
 
-  <script>
-    document.getElementById("mostrarMensagem").onclick = function () {
-      const container = document.getElementById("mensagemContainer");
+  <!-- Resto do conteúdo -->
+  <h2>Coisas que eu gosto:</h2>
+  <ul>
+    <li>Jogar videogame</li>
+    <li>Ouvir música</li>
+    <li>Ler</li>
+  </ul>
 
-      container.style.display = "block";
+  <img
+    id="videogame"
+    src="https://images.openai.com/thumbnails/7551faaea8e32a35cf718493ca327f30.jpeg"
+    alt="Pessoa jogando videogame"
+    style="width: 300px; cursor: pointer;"
+  />
 
-      if (container.innerHTML.trim() === "") {
-        container.innerHTML = `<p>Seja muito bem-vindo!</p>`;
-      }
-    };
-  </script>
-
-</body>
-
-    <h2>Coisas que eu gosto:</h2>
-    <ul>
-        <li>Jogar videogame</li>
-        <li>Ouvir música</li>
-        <li>Ler</li>
-    </ul>
-
-    <!-- Imagem do videogame após a lista -->
-    <img id="videogame" src="https://images.openai.com/thumbnails/7551faaea8e32a35cf718493ca327f30.jpeg" alt="Pessoa jogando videogame" style="width: 300px; cursor: pointer;">
-
-  <!-- Tabela com países e imagens -->
   <table class="tabela-paises">
     <tr>
-      <td class="nome-pais"><strong>Japão</strong></td>
-      <td class="imagem-pais">
+      <td><strong>Japão</strong></td>
+      <td>
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Torii_gate_at_Itsukushima_Shrine.jpg/320px-Torii_gate_at_Itsukushima_Shrine.jpg"
           alt="Templo Japão"
@@ -94,8 +100,8 @@
       </td>
     </tr>
     <tr>
-      <td class="nome-pais"><strong>Coreia do Sul</strong></td>
-      <td class="imagem-pais">
+      <td><strong>Coreia do Sul</strong></td>
+      <td>
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Seoul_2017-02-17_img3_South_Korea_Drama_Studio.jpg/320px-Seoul_2017-02-17_img3_South_Korea_Drama_Studio.jpg"
           alt="Dorama Coreia"
@@ -103,8 +109,8 @@
       </td>
     </tr>
     <tr>
-      <td class="nome-pais"><strong>Grécia</strong></td>
-      <td class="imagem-pais">
+      <td><strong>Grécia</strong></td>
+      <td>
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Panagia_Prasini_-_Santorini_2007.jpg/320px-Panagia_Prasini_-_Santorini_2007.jpg"
           alt="Santuário Grécia"
@@ -113,12 +119,18 @@
     </tr>
   </table>
 
-  <a
-    href="https://open.spotify.com/intl-pt/artist/1KtNSawz6BDskQOgeRw9a2"
-    target="_blank"
+  <a href="https://open.spotify.com/intl-pt/artist/1KtNSawz6BDskQOgeRw9a2" target="_blank"
     >Minha banda preferida no Spotify</a
   >
 
-  <script src="script.js"></script>
+  <script>
+    document.getElementById("mostrarMensagem").onclick = function () {
+      const container = document.getElementById("mensagemContainer");
+      if (container.innerHTML.trim() === "") {
+        container.innerHTML = `<p>Seja muito bem-vindo! 🐱✨</p>`;
+      }
+      container.classList.add("show");
+    };
+  </script>
 </body>
 </html>
