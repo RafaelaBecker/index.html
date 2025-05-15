@@ -1,38 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rafaela</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: rgb(243, 159, 215);
+      font-family: 'Dancing Script', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      font-size: 1.2rem;
+      text-align: justify;
+      max-width: 800px;
+      margin: 1rem auto;
+      padding: 0 1rem;
+    }
+
+    button {
+      margin: 1rem;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      background-color: #171a21;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      border: none;
+    }
+
+    #mensagemContainer {
+      margin-top: 2rem;
+      display: none;
+    }
+
+    #mensagemContainer img {
+      width: 300px;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+
+    .botao-conteudo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .botao-conteudo img {
+      width: 150px;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Rafaela Becker do Prado Lima Lima Oliveira</h1>
 
-  <p>
-    Sou a Rafaela, tenho 29 anos, nasci em Goiânia mas atualmente moro em
-    Palhoça. Adoro jogar videogame, ouvir música, ler e gatos.
-  </p>
+  <h1>Rafaela Becker do Prado Lima Oliveira</h1>
+  <p>Sou a Rafaela, tenho 29 anos, nasci em Goiânia mas atualmente moro em Palhoça. Adoro jogar videogame, ouvir música, ler e gatos.</p>
 
-  <button id="mostrarMensagem">Clique para ver a mensagem</button>
+  <!-- Botão com imagens -->
+  <button id="mostrarMensagem">
+    Clique para ver a mensagem
+    <div class="botao-conteudo">
+      <img src="https://www.w3schools.com/w3images/cat.jpg" alt="Gato Preto" id="gatoDentroBotao">
+      <img src="https://images.openai.com/thumbnails/7551faaea8e32a35cf718493ca327f30.jpeg" alt="Videogame">
+    </div>
+  </button>
 
-  <div id="mensagemContainer" style="display: none;">
-    <p id="mensagem">Bem-vindo!</p>
-    <img
-      id="imagemGaleria"
-      src="https://www.w3schools.com/w3images/cat.jpg"
-      alt="Imagem de Gato"
-      style="width: 300px; cursor: pointer"
-    />
+  <!-- Mensagem que será exibida -->
+  <div id="mensagemContainer">
+    <p id="mensagemTexto">Bem-vindo!</p>
+    <img id="imagemGaleria" src="https://www.w3schools.com/w3images/cat.jpg" alt="Imagem da Galeria">
   </div>
 
-  <img
-    id="gatoPreto"
-    src="https://images.unsplash.com/photo-1612194820154-4cf1d280b1b7?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhY2h8NXx8Y2F0fGVufDB8fHx8fDE2NTQzMzAxNTA&ixlib=rb-1.2.1&q=80&w=1080"
-    alt="Gato Preto"
-    style="width: 300px; cursor: pointer"
-  />
+  <script>
+    const botao = document.getElementById("mostrarMensagem");
+    const mensagemContainer = document.getElementById("mensagemContainer");
+    const imagemGaleria = document.getElementById("imagemGaleria");
+
+    botao.addEventListener("click", () => {
+      mensagemContainer.style.display = "block";
+    });
+
+    imagemGaleria.addEventListener("click", () => {
+      alert("Miau");
+    });
+  </script>
+</body>
+</html>
+
 
   <h2>Coisas que eu gosto:</h2>
   <ul>
