@@ -7,8 +7,7 @@ document.getElementById("mostrarMensagem").onclick = function () {
     container.id = "mensagemContainer";
     container.innerHTML = `
       <p>Seja muito bem-vindo!</p>
-      <img src="https://www.w3schools.com/w3images/fjords.jpg" alt="Imagem da galeria" style="width: 300px; border-radius: 15px; cursor: pointer;">
-    `;
+    ;
     document.body.appendChild(container);
 
     // Quando clicar na imagem, aparece "Miau"
