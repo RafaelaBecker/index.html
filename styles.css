@@ -136,3 +136,21 @@ button:hover {
     border-radius: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
+
+.secao-gostos {
+  max-width: 800px;
+  margin: 1rem auto; /* centraliza a seção na página */
+  padding: 0 1rem;
+  text-align: left; /* deixa o texto todo alinhado à esquerda */
+  font-size: 1.2rem;
+  color: #5c004f;
+}
+
+.secao-gostos h2 {
+  text-align: center; /* só o título fica centralizado */
+}
+
+.secao-gostos ul {
+  padding-left: 1.2rem; /* padrão da lista para alinhar bem os marcadores */
+  margin-top: 0.5rem;
+}
