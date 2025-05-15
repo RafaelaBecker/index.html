@@ -48,49 +48,77 @@
     }
 
     table {
-      border-collapse: collapse;
       margin: 2rem auto;
-      width: 80%;
-      max-width: 600px;
-      background-color: #f0f0f0;
+      border-collapse: separate;
+      border-spacing: 15px;
+      background-color: rgb(243, 159, 215);
     }
 
     td {
       border: 2px solid black;
-      border-radius: 10px;
-      padding: 1rem;
-      text-align: left;
+      border-radius: 15px;
+      padding: 20px;
+      background-color: rgb(243, 159, 215);
+      width: 400px;
       vertical-align: middle;
     }
 
-    img {
-      width: 120px;
+    .pais {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .nome {
+      font-weight: bold;
+      font-size: 1.4rem;
+      text-align: left;
+      flex: 1;
+    }
+
+    .imagem {
+      width: 150px;
       height: auto;
       border-radius: 10px;
+      flex-shrink: 0;
     }
   </style>
 </head>
 <body>
+
   <h2>Países que quero conhecer</h2>
+
   <table>
     <tr>
-      <td><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Torii_gate_at_Itsukushima_Shrine.jpg" alt="Templo no Japão"></td>
-      <td>Japão</td>
+      <td>
+        <div class="pais">
+          <div class="nome">Japão</div>
+          <img class="imagem" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Torii_gate_at_Itsukushima_Shrine.jpg" alt="Templo no Japão">
+        </div>
+      </td>
+      <td>
+        <div class="pais">
+          <div class="nome">Coreia do Sul</div>
+          <img class="imagem" src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Daejanggeum_Park_2020.jpg" alt="Cenário de dorama coreano">
+        </div>
+      </td>
     </tr>
     <tr>
-      <td><img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Daejanggeum_Park_2020.jpg" alt="Cenário de dorama coreano"></td>
-      <td>Coreia do Sul</td>
-    </tr>
-    <tr>
-      <td><img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Acropolis_of_Athens_2019.jpg" alt="Santuário na Grécia"></td>
-      <td>Grécia</td>
+      <td colspan="2">
+        <div class="pais">
+          <div class="nome">Grécia</div>
+          <img class="imagem" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Acropolis_of_Athens_2019.jpg" alt="Santuário na Grécia">
+        </div>
+      </td>
     </tr>
   </table>
+
 </body>
 </html>
 
     
-    <a href="https://open.spotify.com/intl-pt/artist/1KtNSawz6BDskQOgeRw9a2" target="_blank">Visite o Spotify</a>
+    <a href="https://open.spotify.com/intl-pt/artist/1KtNSawz6BDskQOgeRw9a2" target="_blank">Minha banda preferida no Spotify!</a>
 
     <script src="script.js"></script>
 </body>
