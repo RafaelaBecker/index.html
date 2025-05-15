@@ -1,9 +1,25 @@
-// Exibe mensagem ao clicar no botão de boas-vindas
-document.getElementById("btnBoasVindas").addEventListener("click", function () {
-    alert("Bem-vindo à minha página!");
-});
+var botao = document.getElementById("myButton");
+var areaMensagem = document.getElementById("areaMensagem");
+var mensagemCriada = false;
 
-// Alerta ao clicar no gato preto com a mensagem "Miau"
-document.getElementById("gatoPreto").addEventListener("click", function () {
-    alert("Miau!");
-});
+botao.onclick = function () {
+    if (!mensagemCriada) {
+        var novaMensagem = document.createElement("p");
+        novaMensagem.textContent = "Seja muito bem-vindo!";
+
+        var novaImagem = document.createElement("img");
+        novaImagem.src = "https://www.w3schools.com/w3images/cat.jpg";
+        novaImagem.alt = "Gato da Galeria";
+        novaImagem.style.width = "300px";
+        novaImagem.style.cursor = "pointer";
+
+        novaImagem.addEventListener("click", function () {
+            alert("Miau!");
+        });
+
+        areaMensagem.appendChild(novaMensagem);
+        areaMensagem.appendChild(novaImagem);
+
+        mensagemCriada = true;
+    }
+};
