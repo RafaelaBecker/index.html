@@ -49,10 +49,19 @@ img {
 }
 
 table {
-    border-collapse: collapse;
-    width: 80%;
-    margin: 2rem auto;
+  border-collapse: separate;
+  border-spacing: 5px;        /* espaço entre células */
+  width: 300px;
 }
+
+table td {
+  border: 2px solid #333;
+  border-radius: 12px;        /* cantos arredondados em cada célula */
+  padding: 10px;
+  text-align: left;
+  background-color: #f0f0f0;
+}
+
 
 td {
     text-align: center;
