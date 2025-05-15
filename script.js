@@ -22,12 +22,6 @@ botao.onclick = function () {
 
         mensagemCriada = true;
     }
-};
-
-// Seleciona elementos
-const botao = document.getElementById('mostrarMensagem');
-const mensagemContainer = document.getElementById('mensagemContainer');
-const imagemGaleria = document.getElementById('imagemGaleria');
 
 botao.addEventListener('click', () => {
   // Exibe a mensagem e a imagem ao clicar no botão
