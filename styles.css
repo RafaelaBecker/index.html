@@ -1,147 +1,123 @@
 body {
-    background-color: rgb(243, 159, 215);
-    font-family: 'Dancing Script', sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  background-color: rgb(243, 159, 215);
+  font-family: 'Dancing Script', cursive;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 h1 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 2rem;
-    margin-top: 2rem;
-    color: black;
-    text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: black;
+  text-align: center;
 }
 
 p {
-    font-size: 1.3rem; 
-    text-align: justify;
-    padding: 0 1rem;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto 2rem auto;
+  font-size: 1.3rem;
+  text-align: justify;
+  padding: 0 1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
 }
 
-
 ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: justify; /* Justifica o texto na lista */
-    margin-top: 1rem; 
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto 2rem auto;
+  max-width: 400px;
+  text-align: justify;
 }
 
 ul li {
-    margin-bottom: 1rem;
-    font-size: 1.5rem; /* Ajuste o tamanho da fonte para os itens da lista */
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
 h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-top: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
 }
 
 img {
-    width: 250px;
-    height: auto;
-    border-radius: 12px;
-    display: block;
-    margin: 0 auto;
+  border-radius: 15px;
+  margin-top: 10px;
 }
 
-
-table {
-  border-collapse: collapse; /* junta bordas */
-  width: 320px;
-  margin: 0 auto;
-  border: 2px solid black; /* borda geral */
-  border-radius: 12px; /* arredondar cantos da tabela */
-  overflow: hidden; /* para arredondar funcionar */
-  background-color: #f0f0f0;
-}
-
-table td {
-  border: 1px solid black; /* bordas das células */
-  padding: 8px 12px;
-  vertical-align: middle;
-}
-
-table td:first-child img {
-  width: 40px;
-  height: auto;
-  border-radius: 5px;
-  display: block;
-  margin: 0 auto;
-}
-
-table td:last-child {
-  text-align: left;
-  font-weight: 600;
-  padding-left: 15px;
-}
-
-td {
-    text-align: center;
-    padding: 1rem;
-}
-
-a {
-    display: inline-block;
-    margin-top: 2rem;
-    padding: 0.7rem 1.5rem;
-    background-color: #171a21;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    font-size: 1.5rem;
-}
-
-a:hover {
-    background-color: #2a2e39;
-}
-
-button {
-    margin-top: 2rem;
-    padding: 1rem 2rem;
-    font-size: 1.5rem;
-    background-color: #171a21;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #2a2e39;
-}
-
-#mensagemContainer {
-    margin-top: 2rem;
-}
-
-#imagemGaleria:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-}
-
+/* Tabela estilos */
 .tabela-paises {
-    margin: 2rem auto;
-    border-collapse: collapse;
-    width: 90%;
-    max-width: 600px;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  width: 350px;
+  background-color: rgb(243, 159, 215);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 5px #000;
 }
 
 .tabela-paises td {
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 1rem;
-    text-align: left;
-    vertical-align: middle;
-    background-color: #ffffff;
+  border: 1.5px solid black;
+  padding: 12px 20px;
+  vertical-align: middle;
 }
 
-.tabela-paises img {
-    width: 120px;
-    border-radius: 10px;
+.nome-pais {
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: rgb(243, 159, 215);
+  width: 45%;
+}
+
+.imagem-pais {
+  text-align: right;
+  width: 55%;
+}
+
+.imagem-pais img {
+  width: 140px;
+  height: auto;
+  border-radius: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+a {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #171a21;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+
+a:hover {
+  background-color: #2a2e39;
+}
+
+button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background-color: #171a21;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2a2e39;
+}
+
+#mensagemContainer {
+  margin-top: 2rem;
+}
+
+#imagemGaleria:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
