@@ -48,27 +48,32 @@ img {
 }
 
 .tabela-paises {
+  width: 90%;
+  max-width: 800px;
   margin: 2rem auto;
-  border-collapse: separate;
-  border-spacing: 0;
-  border-radius: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  background-color: #fff0f6; /* um rosa bem clarinho para combinar */
-  overflow: hidden;
+  border-collapse: collapse;
 }
 
 .tabela-paises td {
   padding: 1rem;
+  border: 1px solid #ccc;
   text-align: center;
-  border: 1px solid #f2cbe0;
-  font-size: 1.1rem;
+  vertical-align: middle;
 }
 
 .tabela-paises img {
   width: 300px;
-  height: auto;
-  border-radius: 15px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tabela-paises strong {
+  font-size: 1.2rem;
+  color: #5c004f;
 }
 
 
