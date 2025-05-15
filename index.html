@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafaela</title>
-
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,21 +12,14 @@
     
     <p>Sou a Rafaela, tenho 29 anos, nasci em Goiânia mas atualmente moro em Palhoça. Adoro jogar videogame, ouvir música, ler e gatos.</p>
 
-   var botao = document.getElementById("myButton");
-    var areaMensagem = document.getElementById('areaMensagem');
-    var mensagemCriada = fase;
+    <!-- Botão para mostrar mensagem -->
+    <button id="myButton">Clique para ver a mensagem</button>
 
-    botao.onclick = function() {
-     if (mensagemCriada === false) {
-     var novaMensagem = document.createElement('p')
-     novaMensagem.textContent = "Seja muito bem vindo!";
-     areaMensagem.appendChild(novaMensagem);
-      mensagemCriada = true;
-     }
-    };
-    <button id="mostrarMensagem">Clique para ver a mensagem</button>
+    <!-- Área onde a mensagem e imagem serão exibidas -->
+    <div id="areaMensagem"></div>
 
-    <img id="gatoPreto" src="https://images.unsplash.com/photo-1612194820154-4cf1d280b1b7?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhY2h8NXx8Y2F0fGVufDB8fHx8fDE2NTQzMzAxNTA&ixlib=rb-1.2.1&q=80&w=1080" alt="Gato Preto" style="width: 300px; cursor: pointer;">
+    <!-- Imagem do Gato Preto -->
+    <img id="gatoPreto" src="https://images.unsplash.com/photo-1612194820154-4cf1d280b1b7?auto=format&fit=crop&w=600&q=80" alt="Gato Preto" style="width: 300px; cursor: pointer;">
 
     <h2>Coisas que eu gosto:</h2>
     <ul>
@@ -46,30 +38,14 @@
             <td>Grécia</td>
         </tr>
         <tr>
-            <td>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Torii_gate_at_Itsukushima_Shrine.jpg/320px-Torii_gate_at_Itsukushima_Shrine.jpg" 
-                     alt="Japão" style="width: 200px;">
-            </td>
-            <td>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Seoul_Skyline_2019.jpg/320px-Seoul_Skyline_2019.jpg" 
-                     alt="Coreia do Sul" style="width: 200px;">
-            </td>
-            <td>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Acropolis_of_Athens_2019.jpg/320px-Acropolis_of_Athens_2019.jpg" 
-                     alt="Grécia" style="width: 200px; border-radius: 15px;">
-            </td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Torii_gate_at_Itsukushima_Shrine.jpg/320px-Torii_gate_at_Itsukushima_Shrine.jpg" alt="Japão" style="width: 200px;"></td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Seoul_Skyline_2019.jpg/320px-Seoul_Skyline_2019.jpg" alt="Coreia do Sul" style="width: 200px;"></td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Acropolis_of_Athens_2019.jpg/320px-Acropolis_of_Athens_2019.jpg" alt="Grécia" style="width: 200px; border-radius: 15px;"></td>
         </tr>
     </table>
 
     <a href="https://open.spotify.com/intl-pt/artist/1KtNSawz6BDskQOgeRw9a2" target="_blank">Visite o Spotify</a>
 
-    <!-- Área para a mensagem e a imagem da galeria -->
-    <div id="mensagemContainer" style="display: none;">
-        <p id="mensagem">Bem-vindo!</p>
-        <img id="imagemGaleria" src="https://www.w3schools.com/w3images/cat.jpg" alt="Imagem de Gato" style="width: 300px; cursor: pointer;">
-    </div>
-
-    <!-- Link para o JavaScript externo -->
     <script src="script.js"></script>
 </body>
 </html>
