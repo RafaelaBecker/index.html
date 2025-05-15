@@ -1,125 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafaela</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rafaela</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>Rafaela Becker do Prado Lima Oliveira</h1>
-    
-    <p class="menor">Sou a Rafaela, tenho 29 anos, nasci em Goiânia mas atualmente moro em Palhoça. Adoro jogar videogame, ouvir música, ler e gatos.</p>
+  <h1>Rafaela Becker do Prado Lima Oliveira</h1>
 
-    <!-- Botão para mostrar mensagem -->
-    <button id="myButton">Clique para ver a mensagem</button>
+  <p>
+    Sou a Rafaela, tenho 29 anos, nasci em Goiânia mas atualmente moro em
+    Palhoça. Adoro jogar videogame, ouvir música, ler e gatos.
+  </p>
 
-    <!-- Área onde a mensagem e imagem serão exibidas -->
-    <div id="areaMensagem"></div>
+  <button id="mostrarMensagem">Clique para ver a mensagem</button>
 
-    <!-- Imagem do Gato Preto -->
-    <img id="gatoPreto" src="https://images.unsplash.com/photo-1612194820154-4cf1d280b1b7?auto=format&fit=crop&w=600&q=80" alt="Gato Preto" style="width: 300px; cursor: pointer;">
+  <div id="mensagemContainer" style="display: none;">
+    <p id="mensagem">Bem-vindo!</p>
+    <img
+      id="imagemGaleria"
+      src="https://www.w3schools.com/w3images/cat.jpg"
+      alt="Imagem de Gato"
+      style="width: 300px; cursor: pointer"
+    />
+  </div>
 
-    <h2>Coisas que eu gosto:</h2>
-    <ul>
-        <li>Jogar videogame</li>
-        <li>Ouvir música</li>
-        <li>Ler</li>
-    </ul>
+  <img
+    id="gatoPreto"
+    src="https://images.unsplash.com/photo-1612194820154-4cf1d280b1b7?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhY2h8NXx8Y2F0fGVufDB8fHx8fDE2NTQzMzAxNTA&ixlib=rb-1.2.1&q=80&w=1080"
+    alt="Gato Preto"
+    style="width: 300px; cursor: pointer"
+  />
 
-    <!-- Imagem do Videogame -->
-    <img id="videogame" src="https://images.openai.com/thumbnails/7551faaea8e32a35cf718493ca327f30.jpeg" alt="Pessoa jogando videogame" style="width: 300px; cursor: pointer;">
+  <h2>Coisas que eu gosto:</h2>
+  <ul>
+    <li>Jogar videogame</li>
+    <li>Ouvir música</li>
+    <li>Ler</li>
+  </ul>
 
-   <title>Países que quero conhecer</title>
-  <style>
-    body {
-      background-color: rgb(243, 159, 215);
-      font-family: 'Dancing Script', sans-serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    h2 {
-      font-size: 2rem;
-      margin-top: 2rem;
-      color: black;
-    }
-
-    table {
-      margin: 2rem auto;
-      border-collapse: separate;
-      border-spacing: 15px;
-      background-color: rgb(243, 159, 215);
-    }
-
-    td {
-      border: 2px solid black;
-      border-radius: 15px;
-      padding: 20px;
-      background-color: rgb(243, 159, 215);
-      width: 400px;
-      vertical-align: middle;
-    }
-
-    .pais {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    .nome {
-      font-weight: bold;
-      font-size: 1.4rem;
-      text-align: left;
-      flex: 1;
-    }
-
-    .imagem {
-      width: 150px;
-      height: auto;
-      border-radius: 10px;
-      flex-shrink: 0;
-    }
-  </style>
-</head>
-<body>
-
-  <h2>Países que quero conhecer</h2>
-
-  <table>
+  <!-- Tabela com países e imagens -->
+  <table class="tabela-paises">
     <tr>
-      <td>
-        <div class="pais">
-          <div class="nome">Japão</div>
-          <img class="imagem" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Torii_gate_at_Itsukushima_Shrine.jpg" alt="Templo no Japão">
-        </div>
-      </td>
-      <td>
-        <div class="pais">
-          <div class="nome">Coreia do Sul</div>
-          <img class="imagem" src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Daejanggeum_Park_2020.jpg" alt="Cenário de dorama coreano">
-        </div>
+      <td class="nome-pais"><strong>Japão</strong></td>
+      <td class="imagem-pais">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Torii_gate_at_Itsukushima_Shrine.jpg/320px-Torii_gate_at_Itsukushima_Shrine.jpg"
+          alt="Templo Japão"
+        />
       </td>
     </tr>
     <tr>
-      <td colspan="2">
-        <div class="pais">
-          <div class="nome">Grécia</div>
-          <img class="imagem" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Acropolis_of_Athens_2019.jpg" alt="Santuário na Grécia">
-        </div>
+      <td class="nome-pais"><strong>Coreia do Sul</strong></td>
+      <td class="imagem-pais">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Seoul_2017-02-17_img3_South_Korea_Drama_Studio.jpg/320px-Seoul_2017-02-17_img3_South_Korea_Drama_Studio.jpg"
+          alt="Dorama Coreia"
+        />
+      </td>
+    </tr>
+    <tr>
+      <td class="nome-pais"><strong>Grécia</strong></td>
+      <td class="imagem-pais">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Panagia_Prasini_-_Santorini_2007.jpg/320px-Panagia_Prasini_-_Santorini_2007.jpg"
+          alt="Santuário Grécia"
+        />
       </td>
     </tr>
   </table>
 
-</body>
-</html>
+  <a
+    href="https://open.spotify.com/intl-pt/artist/1KtNSawz6BDskQOgeRw9a2"
+    target="_blank"
+    >Minha banda preferida no Spotify</a
+  >
 
-    
-    <a href="https://open.spotify.com/intl-pt/artist/1KtNSawz6BDskQOgeRw9a2" target="_blank">Minha banda preferida no Spotify!</a>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
