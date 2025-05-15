@@ -48,23 +48,21 @@ img {
 }
 
 .tabela-paises {
-  width: 90%;
-  max-width: 800px;
   margin: 2rem auto;
   border-collapse: collapse;
 }
 
 .tabela-paises td {
   padding: 1rem;
-  border: 1px solid #ccc;
   text-align: center;
-  vertical-align: middle;
+  border: 1px solid #ccc;
+  border-radius: 15px;
 }
 
 .tabela-paises img {
   width: 300px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .nome-pais {
