@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafaela</title>
 
-    <!-- Link para o CSS externo -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,10 +13,20 @@
     
     <p>Sou a Rafaela, tenho 29 anos, nasci em Goiânia mas atualmente moro em Palhoça. Adoro jogar videogame, ouvir música, ler e gatos.</p>
 
-    <!-- Botão para mostrar a mensagem, agora embaixo do texto -->
+   var botao = document.getElementById("myButton");
+    var areaMensagem = document.getElementById('areaMensagem');
+    var mensagemCriada = fase;
+
+    botao.onclick = function() {
+     if (mensagemCriada === false) {
+     var novaMensagem = document.createElement('p')
+     novaMensagem.textContent = "Seja muito bem vindo!";
+     areaMensagem.appendChild(novaMensagem);
+      mensagemCriada = true;
+     }
+    };
     <button id="mostrarMensagem">Clique para ver a mensagem</button>
 
-    <!-- Imagem do Gato Preto antes da lista de gostos -->
     <img id="gatoPreto" src="https://images.unsplash.com/photo-1612194820154-4cf1d280b1b7?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhY2h8NXx8Y2F0fGVufDB8fHx8fDE2NTQzMzAxNTA&ixlib=rb-1.2.1&q=80&w=1080" alt="Gato Preto" style="width: 300px; cursor: pointer;">
 
     <h2>Coisas que eu gosto:</h2>
