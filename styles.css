@@ -49,18 +49,33 @@ img {
 }
 
 table {
-  border-collapse: separate;
-  border-spacing: 5px;        /* espaço entre células */
+  border-collapse: separate; /* Para permitir bordas arredondadas */
+  border-spacing: 0; /* Sem espaçamento entre células */
   width: 300px;
+  margin: 2rem auto;
+  border: 2px solid black; /* Borda geral da tabela */
+  border-radius: 12px; /* Bordas arredondadas da tabela */
+  overflow: hidden; /* Para garantir o arredondamento das bordas */
+}
+
+table tr {
+  border-bottom: 2px solid black; /* Borda preta entre as linhas */
+}
+
+table tr:last-child {
+  border-bottom: none; /* Remove a borda inferior da última linha */
 }
 
 table td {
-  border: 2px solid #333;
-  border-radius: 12px;        /* cantos arredondados em cada célula */
+  border: none; /* Remove bordas internas */
   padding: 10px;
   text-align: left;
   background-color: #f0f0f0;
 }
+
+/* Se quiser as células com borda arredondada, pode ser só a tabela arredondada já suficiente */
+/* Se quiser bordas arredondadas em cada célula, precisa border-collapse: separate e border-spacing > 0 */
+
 
 
 td {
