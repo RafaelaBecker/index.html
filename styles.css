@@ -49,21 +49,28 @@ img {
 
 .tabela-paises {
   margin: 2rem auto;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: #fff0f6; /* um rosa bem clarinho para combinar */
+  overflow: hidden;
 }
 
 .tabela-paises td {
   padding: 1rem;
   text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 15px;
+  border: 1px solid #f2cbe0;
+  font-size: 1.1rem;
 }
 
 .tabela-paises img {
   width: 300px;
   height: auto;
   border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 .nome-pais {
   text-align: left;
