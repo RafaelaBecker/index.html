@@ -1,28 +1,17 @@
-var botao = document.getElementById("myButton");
-var areaMensagem = document.getElementById("areaMensagem");
-var mensagemCriada = false;
-
-botao.onclick = function () {
-    if (mensagemCriada === false) {
-        var novaMensagem = document.createElement("p");
-        novaMensagem.textContent = "Seja muito bem-vindo!";
-        areaMensagem.appendChild(novaMensagem);
-        mensagemCriada = true;
-    }
-};
-
 document.getElementById("mostrarMensagem").onclick = function () {
   let container = document.getElementById("mensagemContainer");
 
+  // Se o container ainda não existe, cria ele
   if (!container) {
     container = document.createElement("div");
     container.id = "mensagemContainer";
     container.innerHTML = `
       <p>Seja muito bem-vindo!</p>
-      <img src="https://www.w3schools.com/w3images/fjords.jpg" alt="Imagem da galeria">
+      <img src="https://www.w3schools.com/w3images/fjords.jpg" alt="Imagem da galeria" style="width: 300px; border-radius: 15px; cursor: pointer;">
     `;
     document.body.appendChild(container);
 
+    // Quando clicar na imagem, aparece "Miau"
     const imagem = container.querySelector("img");
     imagem.addEventListener("click", () => {
       alert("Miau");
