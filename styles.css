@@ -169,11 +169,6 @@ button:hover {
 }
 
 .titulo-secao {
-  font-family: 'Gloria Hallelujah', cursive;
-  font-size: 1.2rem;
-  color: #5c004f;
-  text-align: center;
-  margin: 1rem auto 0.5rem;
-  max-width: 800px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem; /* você pode ajustar se ficar muito pequeno */
 }
-
