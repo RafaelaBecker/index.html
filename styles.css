@@ -165,13 +165,13 @@ h1.titulo {
   color: #2ecc71; /* Verde esmeralda como cor fixa */
 }
 
-.spotify-link {
+a[href*="spotify"] {
   color: #5c004f;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.spotify-link:hover {
-  color: #2ecc71; /* verde esmeralda */
+a[href*="spotify"]:hover {
+  color: #2ecc71; /* Verde esmeralda */
   text-decoration: underline;
 }
