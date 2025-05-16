@@ -82,6 +82,11 @@ a {
   color: #5c004f;
 }
 
+a[href*="spotify"] {
+  color: #5c004f;
+  transition: color 0.3s ease;
+}
+
 a[href*="spotify"]:hover {
   color: #2ecc71; /* verde esmeralda */
   text-decoration: underline;
