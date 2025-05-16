@@ -29,8 +29,8 @@ ul li {
 }
 
 h2.secao-titulo {
-  font-size: 1.2rem; /* tamanho menor */
-  color: #5c004f;    /* cor combinando com o resto */
+  font-size: 1.2rem; 
+  color: #5c004f;   
   margin-top: 2rem;
 }
 
@@ -121,7 +121,7 @@ button:hover {
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 .titulo {
-    background-image: url(https://github.com/RafaelaBecker/index.html/blob/main/20250507_225009.jpg); /* Caminho da imagem no repositório */
+    background-image: url(https://github.com/RafaelaBecker/index.html/blob/main/20250507_225009.jpg); 
     background-size: cover;
     background-position: center;
     color: white;
@@ -134,25 +134,25 @@ button:hover {
 
 .secao-gostos {
   max-width: 800px;
-  margin: 1rem auto; /* centraliza a seção na página */
+  margin: 1rem auto; 
   padding: 0 1rem;
-  text-align: left; /* deixa o texto todo alinhado à esquerda */
+  text-align: left; 
   font-size: 0.9rem;
   color: #5c004f;
 }
 
 .secao-gostos h2 {
-  text-align: center; /* só o título fica centralizado */
+  text-align: center; 
 }
 
 .secao-gostos ul {
-  padding-left: 1.2rem; /* padrão da lista para alinhar bem os marcadores */
+  padding-left: 1.2rem; 
   margin-top: 0.5rem;
 }
 
 .titulo-secao {
   font-family: 'Press Start 2P', cursive;
-  font-size: 1rem; /* você pode ajustar se ficar muito pequeno */
+  font-size: 1rem; 
 }
 
 .imagem-padrao {
