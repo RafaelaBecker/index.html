@@ -56,21 +56,10 @@ h2.secao-titulo {
   vertical-align: middle;
 }
 
-.tabela-paises img {
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .tabela-paises strong {
   font-size: 1.2rem;
   color: #5c004f;
 }
-
 
 .nome-pais {
   text-align: left;
@@ -168,7 +157,7 @@ button:hover {
   font-size: 1rem; /* você pode ajustar se ficar muito pequeno */
 }
 
-img {
+.imagem-padrao {
   width: 300px;
   height: 200px;
   object-fit: cover;
