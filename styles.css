@@ -6,13 +6,6 @@ body {
   text-align: center;
 }
 
-h1 {
-  font-size: 2rem;
-  margin-top: 2rem;
-  color: black;
-  text-align: center;
-}
-
 p {
   font-size: 1.3rem;
   text-align: justify;
@@ -163,4 +156,11 @@ button:hover {
   border-radius: 12px;
   display: block;
   margin: 10px auto;
+}
+
+h1.titulo {
+  font-family: 'Leckerli One', cursive;
+  font-size: 3rem;
+  margin-top: 1.5rem;
+  color: #2ecc71; /* Verde esmeralda como cor fixa */
 }
