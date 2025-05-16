@@ -84,14 +84,14 @@ a {
 
 <style>
   a[href*="spotify"] {
-    color: #5c004f !important;
-    transition: color 0.3s ease;
-    text-decoration: none;
-  }
+  color: #5c004f;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 
-  a[href*="spotify"]:hover {
-    color: #2ecc71 !important; /* Verde esmeralda */
-    text-decoration: underline;
+a[href*="spotify"]:hover {
+  color: #2ecc71;
+  text-decoration: underline;
   }
 </style>
 
