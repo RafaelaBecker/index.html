@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <title>Rafaela</title>
-  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Libre+Baskerville&display=swap" rel="stylesheet" />
+
+  <!-- Fontes fofas -->
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Gloria+Hallelujah&family=Leckerli+One&family=Homemade+Apple&family=Press+Start+2P&display=swap" rel="stylesheet" />
+
   <style>
     body {
       background-color: #ffe6f0;
@@ -14,7 +17,7 @@
     }
 
     h1.titulo {
-      font-family: 'Chewy', cursive;
+      font-family: 'Leckerli One', cursive; /* Fonte fofa para o título principal */
       font-size: 3rem;
       margin-top: 1.5rem;
       color: #5c004f;
@@ -62,36 +65,34 @@
       opacity: 1;
     }
 
-    .secao-gostos, .secao-paises {
+    .titulo-secao {
+      font-family: 'Libre Baskerville', serif; /* Fonte mais formal */
+      font-size: 1.5rem;
+      color: #5c004f;
+      text-align: center;
+      margin: 1rem auto 0.5rem;
       max-width: 800px;
-      margin: 2rem auto;
+    }
+
+    .secao-gostos {
+      max-width: 800px;
+      margin: 1rem auto;
       padding: 0 1rem;
       text-align: left;
+      font-size: 1.2rem;
       color: #5c004f;
     }
 
-    .secao-gostos h2,
-    .secao-paises h2 {
-      font-family: 'Libre Baskerville', serif;
-      text-align: center;
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-
     .secao-gostos ul {
-      padding-left: 1.5rem;
+      padding-left: 1.2rem;
       margin-top: 0;
-      list-style-type: disc;
-    }
-
-    .secao-gostos li {
-      margin-bottom: 0.8rem;
+      line-height: 2.2rem; /* Maior espaçamento entre os itens */
     }
 
     #videogame {
       width: 300px;
       cursor: pointer;
-      border-radius: 10px;
+      border-radius: 12px;
       margin-top: 1rem;
     }
 
@@ -110,7 +111,7 @@
     }
 
     .tabela-paises img {
-      width: 300px;
+      max-width: 100%;
       height: auto;
       border-radius: 10px;
     }
@@ -122,10 +123,9 @@
 
     a {
       display: block;
-      margin: 2rem 0;
+      margin: 2rem auto;
       font-size: 1.2rem;
       color: #5c004f;
-      text-decoration: none;
     }
   </style>
 </head>
@@ -136,11 +136,11 @@
   <p>Sou a Rafaela, tenho 29 anos, nasci em Goiânia mas atualmente moro em Palhoça. Adoro jogar videogame, ouvir música, ler e gatos.</p>
 
   <button id="mostrarMensagem">Clique para ver a mensagem</button>
-
   <div id="mensagemContainer"></div>
 
+  <!-- Seção "Coisas que eu gosto" -->
+  <h2 class="titulo-secao">Coisas que eu gosto</h2>
   <div class="secao-gostos">
-    <h2>Coisas que eu gosto</h2>
     <ul>
       <li>Jogar videogame</li>
       <li>Ouvir música</li>
@@ -154,9 +154,8 @@
     alt="Pessoa jogando videogame"
   />
 
-  <div class="secao-paises">
-    <h2>Países que eu quero visitar</h2>
-  </div>
+  <!-- Título da tabela -->
+  <h2 class="titulo-secao">Países que eu quero visitar</h2>
 
   <table class="tabela-paises">
     <tr>
