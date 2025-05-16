@@ -17,7 +17,7 @@
     }
 
     h1.titulo {
-      font-family: 'Leckerli One', cursive; /* Fonte fofa para o título principal */
+      font-family: 'Leckerli One', cursive;
       font-size: 3rem;
       margin-top: 1.5rem;
       color: #5c004f;
@@ -66,7 +66,7 @@
     }
 
     .titulo-secao {
-      font-family: 'Libre Baskerville', serif; /* Fonte mais formal */
+      font-family: 'Libre Baskerville', serif;
       font-size: 1.5rem;
       color: #5c004f;
       text-align: center;
@@ -86,14 +86,16 @@
     .secao-gostos ul {
       padding-left: 1.2rem;
       margin-top: 0;
-      line-height: 2.2rem; /* Maior espaçamento entre os itens */
+      line-height: 2.2rem;
     }
 
-    #videogame {
+    .imagem-padrao {
       width: 300px;
-      cursor: pointer;
+      height: 200px;
+      object-fit: cover;
       border-radius: 12px;
-      margin-top: 1rem;
+      display: block;
+      margin: 10px auto;
     }
 
     .tabela-paises {
@@ -108,12 +110,6 @@
       border: 1px solid #ccc;
       text-align: center;
       vertical-align: middle;
-    }
-
-    .tabela-paises img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
     }
 
     .tabela-paises strong {
@@ -149,35 +145,34 @@
   </div>
 
   <img
-  id="videogame"
-  class="imagem-padrao"
-  src="https://images.openai.com/thumbnails/7551faaea8e32a35cf718493ca327f30.jpeg"
-  alt="Pessoa jogando videogame"
-/>
+    class="imagem-padrao"
+    src="https://images.openai.com/thumbnails/7551faaea8e32a35cf718493ca327f30.jpeg"
+    alt="Pessoa jogando videogame"
+  />
 
   <!-- Título da tabela -->
   <h2 class="titulo-secao">Países que eu quero visitar</h2>
 
   <table class="tabela-paises">
-  <tr>
-    <td><strong>Japão</strong></td>
-    <td>
-      <img class="imagem-padrao" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Cherry_blossom_in_Osaka_%28Unsplash%29.jpg/960px-Cherry_blossom_in_Osaka_%28Unsplash%29.jpg?20170820212851" alt="Flor de cerejeira">
-    </td>
-  </tr>
-  <tr>
-    <td><strong>Coreia do Sul</strong></td>
-    <td>
-      <img class="imagem-padrao" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Daejeon_lights.jpg/960px-Daejeon_lights.jpg?20210118043640" alt="Daejeon">
-    </td>
-  </tr>
-  <tr>
-    <td><strong>Grécia</strong></td>
-    <td>
-      <img class="imagem-padrao" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Erechtheum_Acropolis_Athens.jpg/960px-Erechtheum_Acropolis_Athens.jpg?20160124145726" alt="Santuário Grécia">
-    </td>
-  </tr>
-</table>
+    <tr>
+      <td><strong>Japão</strong></td>
+      <td>
+        <img class="imagem-padrao" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Cherry_blossom_in_Osaka_%28Unsplash%29.jpg/960px-Cherry_blossom_in_Osaka_%28Unsplash%29.jpg?20170820212851" alt="Flor de cerejeira">
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Coreia do Sul</strong></td>
+      <td>
+        <img class="imagem-padrao" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Daejeon_lights.jpg/960px-Daejeon_lights.jpg?20210118043640" alt="Daejeon">
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Grécia</strong></td>
+      <td>
+        <img class="imagem-padrao" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Erechtheum_Acropolis_Athens.jpg/960px-Erechtheum_Acropolis_Athens.jpg?20160124145726" alt="Santuário Grécia">
+      </td>
+    </tr>
+  </table>
 
   <a href="https://open.spotify.com/intl-pt/artist/1KtNSawz6BDskQOgeRw9a2" target="_blank">Minha banda preferida no Spotify</a>
 
