@@ -172,3 +172,12 @@ button:hover {
   font-family: 'Press Start 2P', cursive;
   font-size: 1rem; /* você pode ajustar se ficar muito pequeno */
 }
+
+img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  display: block;
+  margin: 10px auto;
+}
